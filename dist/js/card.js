@@ -90,7 +90,7 @@ var _hoisted_1 = {
   "class": "container"
 };
 var _hoisted_2 = {
-  "class": "container2 ml-3 min-h-30 h-24"
+  "class": "container2 ml-3"
 };
 var _hoisted_3 = {
   key: 0,
