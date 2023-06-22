@@ -29,4 +29,10 @@ class DatePicker extends Card
         ]);
     }
 
+    public function addParameter($value) {
+        return $this->withMeta([
+            'addParameter' => $value,
+        ]);
+    }
+
 }

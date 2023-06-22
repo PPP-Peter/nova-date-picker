@@ -6,6 +6,7 @@
                 <h1 class="text-lg  text-gray-500 font-light" v-if="!userDisable">
                     <strong class="font-bold p-2">{{ __('Name') }}:</strong>{{ user.name }}
                     <strong class="font-bold p-2">{{ __('Email') }}:</strong>{{ user.email }}
+                    <strong v-if="this.card.addParameter" class="font-bold p-2">{{ __(this.card.addParameter) }}:</strong>{{ user[this.card.addParameter] }}
                 </h1>
                 <div v-if="userDisable" class="prazdne" style="height: 30px"> </div>
             </div>

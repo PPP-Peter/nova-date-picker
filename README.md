@@ -19,7 +19,7 @@ use Wame\DatePicker\DatePicker;
 
   more options:
 ->userDisable(true) // default false
-//->parameter('tel') // default null
+->addParameter('address')
 ```
 
 
