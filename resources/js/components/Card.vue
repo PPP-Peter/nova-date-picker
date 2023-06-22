@@ -78,6 +78,9 @@ export default {
 
     mounted() {
         this.userData()
+        console.log('user enable')
+        console.log(this.card.userDisable)
+        console.log(this.userDisable)
     },
 }
 </script>
