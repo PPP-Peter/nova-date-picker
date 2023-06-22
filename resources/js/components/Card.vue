@@ -95,4 +95,15 @@ h1{
     filter: contrast(1.1);
     opacity: 1;
 }
+.rotate{
+  animation: rotation 1s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 </style>
