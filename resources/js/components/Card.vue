@@ -111,4 +111,7 @@ export default {
             transform: rotate(359deg);
         }
     }
+    Card {
+      height:55px !important;
+    }
 </style>
