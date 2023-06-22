@@ -3,11 +3,12 @@
         <div class="container">
 
 
-            <div class="container2 ml-3" v-if="userEnable">
-                <h1 class="text-lg  text-gray-500 font-light ">
+            <div class="container2 ml-3 min-h-30 h-24">
+                <h1 class="text-lg  text-gray-500 font-light" v-if="!userDisable">
                     <strong class="font-bold p-2">{{ __('Name') }}:</strong>{{ user.name }}
                     <strong class="font-bold p-2">{{ __('Email') }}:</strong>{{ user.email }}
                 </h1>
+                <div v-if="userDisable" class="prazdne" style="height: 30px"> </div>
             </div>
 
 
@@ -46,12 +47,10 @@ export default {
 
     data() {
         return {
-          select: '',
-          user: '',
-          startRotate: false,
-          userEnable: this.card.userEnable || true,
-          //  enabledCountryCode: this.field.enabledCountryCode ?? 'true',
-          //  enabledFlags: true,
+            select: '',
+            user: '',
+            startRotate: false,
+            userDisable: this.card.userDisable || false ,
         }
     },
     methods: {
@@ -79,6 +78,9 @@ export default {
 
     mounted() {
         this.userData()
+        console.log('user enable')
+        console.log(this.card.userDisable)
+        console.log(this.userDisable)
     },
 }
 </script>

@@ -23,9 +23,9 @@ class DatePicker extends Card
         return 'date-picker';
     }
 
-    public function userEnable($value) {
+    public function userDisable($value) {
         return $this->withMeta([
-            'userEnable' => $value,
+            'userDisable' => $value,
         ]);
     }
 

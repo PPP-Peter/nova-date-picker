@@ -18,7 +18,7 @@ use Wame\DatePicker\DatePicker;
 (new DatePicker())->width('full')
 
   more options:
-->userEnable(false)  // default true
+->userDisable(true) // default false
 ->parameter('tel') // default null
 ```
 
