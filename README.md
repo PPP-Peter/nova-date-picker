@@ -14,6 +14,12 @@ composer require pppcreative/date-picker
 
 ``` php
 use Wame\DatePicker\DatePicker;
+
+(new DatePicker())->width('full')
+
+  more options:
+->userEnable(false)  // default true
+->parameter('tel') // default null
 ```
 
 

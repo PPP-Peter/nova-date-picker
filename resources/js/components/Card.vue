@@ -3,7 +3,7 @@
         <div class="container">
 
 
-            <div class="container2 ml-3">
+            <div class="container2 ml-3" v-if="userEnable">
                 <h1 class="text-lg  text-gray-500 font-light ">
                     <strong class="font-bold p-2">{{ __('Name') }}:</strong>{{ user.name }}
                     <strong class="font-bold p-2">{{ __('Email') }}:</strong>{{ user.email }}
@@ -46,9 +46,12 @@ export default {
 
     data() {
         return {
-            select: '',
-            user: '',
-            startRotate: false,
+          select: '',
+          user: '',
+          startRotate: false,
+          userEnable: this.card.userEnable || true,
+          //  enabledCountryCode: this.field.enabledCountryCode ?? 'true',
+          //  enabledFlags: true,
         }
     },
     methods: {
