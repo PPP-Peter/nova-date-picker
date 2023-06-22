@@ -1,5 +1,5 @@
 <template>
-    <Card class="flex flex-col items-right justify-center p-3 max-height-30 min-height-20">
+    <Card class="flex flex-col items-right justify-center p-3" style="height: 55px !important;">
         <div class="container">
 
 
@@ -15,9 +15,7 @@
             <div class="container3 flex ml-3" style="position: absolute; right:3%;top: 8px;">
                 <h1 class="text-right text-xl text-gray-500 font-light pr-4">{{ __('Displayed period') }} </h1>
                 <div class="flex relative ml-auto w-[6rem] flex-shrink-0">
-                    <select aria-label="Select Ranges" class="w-full block form-control form-select  form-select-bordered"
-                            @change="startPicker()"
-                    >
+                    <select aria-label="Select Ranges" class="w-full block form-control form-select  form-select-bordered" @change="startPicker()">
                         <option value="7">{{ __('7 Days') }}</option>
                         <option value="30">{{ __('30 Days') }}</option>
                         <option value="60">{{ __('60 Days') }}</option>
@@ -78,9 +76,6 @@ export default {
 
     mounted() {
         this.userData()
-        console.log('user enable')
-        console.log(this.card.userDisable)
-        console.log(this.userDisable)
     },
 }
 </script>
@@ -110,8 +105,5 @@ export default {
         to {
             transform: rotate(359deg);
         }
-    }
-    Card {
-        height:55px
     }
 </style>
