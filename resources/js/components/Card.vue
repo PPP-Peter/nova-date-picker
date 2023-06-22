@@ -2,17 +2,16 @@
     <Card class="flex flex-col items-right justify-center p-3">
         <div class="container">
 
-      <!--       MORE
+
           <div class="container2 ml-3">
                 <h1 class="text-center text-lg  text-gray-500 font-light ">
                     <strong class="font-bold p-2">{{ __('Name') }}:</strong>{{ user.name }}
-                    <strong class="font-bold p-2">{{ __('Tel') }}:</strong>{{ user.phone }}
                     <strong class="font-bold p-2">{{ __('Email') }}:</strong>{{ user.email }}
                 </h1>
           </div>
-     -->
 
-            <div class="container3 flex ml-3" style="position: absolute; right:3%">
+
+            <div class="container3 flex ml-3" style="position: absolute; right:3%;top: 8px;">
                 <h1 class="text-right text-xl text-gray-500 font-light pr-4">{{ __('Displayed period') }} </h1>
                 <div class="flex relative ml-auto w-[6rem] flex-shrink-0">
                     <select aria-label="Select Ranges" class="w-full block form-control form-select  form-select-bordered"
