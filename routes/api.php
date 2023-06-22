@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use Wame\ContractsCard\Http\Controllers\UserNovaController;
+use Wame\DatePicker\Http\Controllers\UserNovaController;
 
 /*
 |--------------------------------------------------------------------------

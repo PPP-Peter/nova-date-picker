@@ -3,19 +3,19 @@
         <div class="container">
 
 
-          <div class="container2 ml-3">
+            <div class="container2 ml-3">
                 <h1 class="text-center text-lg  text-gray-500 font-light ">
                     <strong class="font-bold p-2">{{ __('Name') }}:</strong>{{ user.name }}
                     <strong class="font-bold p-2">{{ __('Email') }}:</strong>{{ user.email }}
                 </h1>
-          </div>
+            </div>
 
 
             <div class="container3 flex ml-3" style="position: absolute; right:3%;top: 8px;">
                 <h1 class="text-right text-xl text-gray-500 font-light pr-4">{{ __('Displayed period') }} </h1>
                 <div class="flex relative ml-auto w-[6rem] flex-shrink-0">
                     <select aria-label="Select Ranges" class="w-full block form-control form-select  form-select-bordered"
-                    @change="startPicker()"
+                            @change="startPicker()"
                     >
                         <option value="7">{{ __('7 Days') }}</option>
                         <option value="30">{{ __('30 Days') }}</option>
@@ -60,7 +60,7 @@ export default {
                 selectElement.dispatchEvent(new Event('change'));
             });
             setTimeout(() => {
-                 this.startRotate = false;
+                this.startRotate = false;
             }, 1000);
         },
 
@@ -81,29 +81,29 @@ export default {
 </script>
 
 <style scoped>
-h1{
-    align-self: center;
-}
-.refreshCharts{
-    align-self: center !important;
-    margin-left: 14px;
-    filter: contrast(0.5);
-    opacity: 0.7;
-}
-.refreshCharts:hover{
-    cursor: pointer;
-    filter: contrast(1.1);
-    opacity: 1;
-}
-.rotate{
-  animation: rotation 1s infinite linear;
-}
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
+    h1{
+        align-self: center;
+    }
+    .refreshCharts{
+        align-self: center !important;
+        margin-left: 14px;
+        filter: contrast(0.5);
+        opacity: 0.7;
+    }
+    .refreshCharts:hover{
+        cursor: pointer;
+        filter: contrast(1.1);
+        opacity: 1;
+    }
+    .rotate{
+        animation: rotation 1s infinite linear;
+    }
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(359deg);
+        }
+    }
 </style>

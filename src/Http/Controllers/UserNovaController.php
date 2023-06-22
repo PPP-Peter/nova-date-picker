@@ -1,10 +1,8 @@
 <?php
 
-namespace Wame\ContractsCard\Http\Controllers;
+namespace Wame\DatePicker\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Models\Contract;
-use App\Models\Group;
 use App\Models\User;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
