@@ -1,9 +1,10 @@
 {
-    "name": "wame/date-picker",
-    "description": "A Laravel Nova card.",
+    "name": "pppcreative/date-picker",
+    "description": "Laravel Nova Mupltiple Date Picker",
     "keywords": [
         "laravel",
-        "nova"
+        "nova",
+        "date picker"
     ],
     "license": "MIT",
     "require": {
@@ -23,7 +24,5 @@
     },
     "config": {
         "sort-packages": true
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
