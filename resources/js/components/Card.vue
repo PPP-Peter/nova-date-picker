@@ -65,7 +65,7 @@ export default {
         },
 
         async userData() {
-            return await Nova.request().get('/nova-vendor/contracts-card/user')
+            return await Nova.request().get('/nova-vendor/date-picker/user')
                 .then(response => {
                     this.user = response.data
                     return response.data
