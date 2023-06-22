@@ -112,6 +112,6 @@ export default {
         }
     }
     Card {
-      height:55px !important;
+        height:55px
     }
 </style>
