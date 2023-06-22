@@ -1,5 +1,5 @@
 <template>
-    <Card class="flex flex-col items-right justify-center p-3">
+    <Card class="flex flex-col items-right justify-center p-3 max-height-30 min-height-20">
         <div class="container">
 
 
