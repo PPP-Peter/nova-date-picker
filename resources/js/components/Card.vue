@@ -4,7 +4,7 @@
 
 
             <div class="container2 ml-3">
-                <h1 class="text-center text-lg  text-gray-500 font-light ">
+                <h1 class="text-lg  text-gray-500 font-light ">
                     <strong class="font-bold p-2">{{ __('Name') }}:</strong>{{ user.name }}
                     <strong class="font-bold p-2">{{ __('Email') }}:</strong>{{ user.email }}
                 </h1>
