@@ -1,7 +1,6 @@
 <template>
-    <Card class="flex flex-col items-right justify-center p-3" style="height: 55px !important;">
+    <Card class="flex flex-col items-right justify-center p-3">
         <div class="container">
-
 
             <div class="container2 ml-3">
                 <h1 class="text-lg  text-gray-500 font-light" v-if="!userDisable">
@@ -10,7 +9,6 @@
                 </h1>
                 <div v-if="userDisable" class="prazdne" style="height: 30px"> </div>
             </div>
-
 
             <div class="container3 flex ml-3" style="position: absolute; right:3%;top: 8px;">
                 <h1 class="text-right text-xl text-gray-500 font-light pr-4">{{ __('Displayed period') }} </h1>
