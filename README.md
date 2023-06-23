@@ -2,7 +2,7 @@
 Functions: multiple graphs date pick, refresh graphs, show logged user data",
 
 <img src="preview.png">
-
+<img src="image2.png">
 
 ## Installation
 
@@ -54,6 +54,8 @@ public function cards()
     ]
 }
 ```
+
+
 
 
 
