@@ -1,6 +1,6 @@
 {
     "name": "pppcreative/date-picker",
-    "description": "Laravel Nova Mupltiple Date Picker",
+    "description": "Laravel Nova Mupltiple Date Picker -  multiple graphs date pick , refresh graphs, show logged user data",
     "keywords": [
         "laravel",
         "nova",

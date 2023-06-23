@@ -1,5 +1,5 @@
 # Laravel Nova Multiple Date Picker
-
+Functions: multiple graphs date pick, refresh graphs, show logged user data",
 
 <img src="preview.png">
 
@@ -35,12 +35,20 @@ You can define count days in `config/wame-datepicker.php`
         "365",
     ]
 ```
-If you define config later you must reinstall ! composer require pppcreative/date-picker
 
 ## Translates
 You can edit translates in nova/sk.json
 Example: 
 "address": "Adresa",
+
+Example for use:
+``` php
+(new DatePicker())
+    ->width('full')
+    ->userDisable(false)
+    ->addParameter('id')
+    ->getDateRange(),
+```
 
 
 
