@@ -41,7 +41,7 @@ You can edit translates in nova/sk.json
 Example: 
 "address": "Adresa",
 
-Example for use:
+## Example for use:
 ``` php
 public function cards()
 {
