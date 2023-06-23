@@ -8,6 +8,8 @@
 
 ``` php
 composer require pppcreative/date-picker
+
+php artisan vendor:publish --tag=date-picker
 ```
 
 ## Usage
