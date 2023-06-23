@@ -43,11 +43,16 @@ Example:
 
 Example for use:
 ``` php
-(new DatePicker())
-    ->width('full')
-    ->userDisable(false)
-    ->addParameter('id')
-    ->getDateRange(),
+public function cards()
+{
+    return [
+        (new DatePicker())
+            ->width('full')
+            ->userDisable(false)
+            ->addParameter('id')
+            ->getDateRange(),
+    ]
+}
 ```
 
 
