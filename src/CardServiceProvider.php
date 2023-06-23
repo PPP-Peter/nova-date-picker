@@ -19,7 +19,7 @@ class CardServiceProvider extends ServiceProvider
 
 
         if ($this->app->runningInConsole()) {
-            $this->publishes([__DIR__.'/../config' => config_path('')], ['config, date-picker']);
+            $this->publishes([__DIR__.'/../config' => config_path('')], 'date-picker');
             //$this->publishes([__DIR__ . '/../resources/' => resource_path('Resources')], ['date-picker']);
         }
 
