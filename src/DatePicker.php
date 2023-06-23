@@ -35,4 +35,10 @@ class DatePicker extends Card
         ]);
     }
 
+    public function getDateRange() {
+        return $this->withMeta([
+            'getDateRange' => config('wame-datepicker.date'),
+        ]);
+    }
+
 }

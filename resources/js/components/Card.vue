@@ -14,12 +14,16 @@
             <div class="container3 flex ml-3" style="position: absolute; right:3%;top: 8px;">
                 <h1 class="text-right text-xl text-gray-500 font-light pr-4">{{ __('Displayed period') }} </h1>
                 <div class="flex relative ml-auto w-[6rem] flex-shrink-0">
-                    <select aria-label="Select Ranges" class="w-full block form-control form-select  form-select-bordered" @change="startPicker()">
-                        <option value="7">{{ __('7 Days') }}</option>
-                        <option value="30">{{ __('30 Days') }}</option>
-                        <option value="60">{{ __('60 Days') }}</option>
-                        <option value="90">{{ __('90 Days') }}</option>
-                        <option value="365">{{ __('365 Days') }}</option>
+                    <select v-if="!this.card.getDateRange" aria-label="Select Ranges" class="w-full block form-control form-select  form-select-bordered" @change="startPicker()">
+                      <option value="7">{{ __('7 Days') }}</option>
+                      <option value="30">{{ __('30 Days') }}</option>
+                      <option value="60">{{ __('60 Days') }}</option>
+                      <option value="90">{{ __('90 Days') }}</option>
+                      <option value="365">{{ __('365 Days') }}</option>
+                    </select>
+                    <!--  if have define getDateRange-->
+                    <select v-if="this.card.getDateRange" aria-label="Select Ranges" class="w-full block form-control form-select  form-select-bordered" @change="startPicker()">
+                      <option v-for="(item, index) in this.card.getDateRange" :value="item">{{ __(item + ' Days') }}</option>
                     </select>
                     <svg class="flex-shrink-0 pointer-events-none form-select-arrow" xmlns="http://www.w3.org/2000/svg"  width="10" height="6" viewBox="0 0 10 6">
                         <path class="fill-current"
