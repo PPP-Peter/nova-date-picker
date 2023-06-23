@@ -62,9 +62,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   },
   mounted: function mounted() {
     this.userData();
-    console.log('user enable');
-    console.log(this.card.userDisable);
-    console.log(this.userDisable);
   }
 });
 
@@ -103,13 +100,17 @@ var _hoisted_5 = {
   "class": "font-bold p-2"
 };
 var _hoisted_6 = {
+  key: 0,
+  "class": "font-bold p-2"
+};
+var _hoisted_7 = {
   key: 1,
   "class": "prazdne",
   style: {
     "height": "30px"
   }
 };
-var _hoisted_7 = {
+var _hoisted_8 = {
   "class": "container3 flex ml-3",
   style: {
     "position": "absolute",
@@ -117,28 +118,29 @@ var _hoisted_7 = {
     "top": "8px"
   }
 };
-var _hoisted_8 = {
+var _hoisted_9 = {
   "class": "text-right text-xl text-gray-500 font-light pr-4"
 };
-var _hoisted_9 = {
+var _hoisted_10 = {
   "class": "flex relative ml-auto w-[6rem] flex-shrink-0"
 };
-var _hoisted_10 = {
+var _hoisted_11 = {
   value: "7"
 };
-var _hoisted_11 = {
+var _hoisted_12 = {
   value: "30"
 };
-var _hoisted_12 = {
+var _hoisted_13 = {
   value: "60"
 };
-var _hoisted_13 = {
+var _hoisted_14 = {
   value: "90"
 };
-var _hoisted_14 = {
+var _hoisted_15 = {
   value: "365"
 };
-var _hoisted_15 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_16 = ["value"];
+var _hoisted_17 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
     "class": "flex-shrink-0 pointer-events-none form-select-arrow",
     xmlns: "http://www.w3.org/2000/svg",
@@ -150,7 +152,7 @@ var _hoisted_15 = /*#__PURE__*/_withScopeId(function () {
     d: "M8.292893.292893c.390525-.390524 1.023689-.390524 1.414214 0 .390524.390525.390524 1.023689 0 1.414214l-4 4c-.390525.390524-1.023689.390524-1.414214 0l-4-4c-.390524-.390525-.390524-1.023689 0-1.414214.390525-.390524 1.023689-.390524 1.414214 0L5 3.585786 8.292893.292893z"
   })], -1 /* HOISTED */);
 });
-var _hoisted_16 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_18 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
     fill: "#817e7e",
     height: "20px",
@@ -177,27 +179,40 @@ var _hoisted_16 = /*#__PURE__*/_withScopeId(function () {
     d: "M381.667,235.742h-113.91l53.219,52.965c-28.132,40.142-74.724,65.042-124.571,65.042 c-83.744,0-151.874-68.13-151.874-151.874h-30c0,100.286,81.588,181.874,181.874,181.874c35.038,0,69.062-9.989,98.391-28.888 c18.584-11.975,34.707-27.145,47.731-44.706l39.139,38.952V235.742z"
   })])])], -1 /* HOISTED */);
 });
-var _hoisted_17 = [_hoisted_16];
+var _hoisted_19 = [_hoisted_18];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _this = this;
   var _component_Card = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Card", true);
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_Card, {
-    "class": "flex flex-col items-right justify-center p-3 max-height-30 min-height-20"
+    "class": "flex flex-col items-right justify-center p-3"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [!$data.userDisable ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("h1", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("strong", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('Name')) + ":", 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.user.name) + " ", 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("strong", _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('Email')) + ":", 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.user.email), 1 /* TEXT */)])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $data.userDisable ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_6)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('Displayed period')), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("select", {
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [!$data.userDisable ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("h1", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("strong", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('Name')) + ":", 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.user.name) + " ", 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("strong", _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('Email')) + ":", 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.user.email) + " ", 1 /* TEXT */), _this.card.addParameter ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("strong", _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__(_this.card.addParameter)) + ":", 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.user[_this.card.addParameter]), 1 /* TEXT */)])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $data.userDisable ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_7)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('Displayed period')), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [!_this.card.getDateRange ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("select", {
+        key: 0,
         "aria-label": "Select Ranges",
         "class": "w-full block form-control form-select form-select-bordered",
         onChange: _cache[0] || (_cache[0] = function ($event) {
           return $options.startPicker();
         })
-      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('7 Days')), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('30 Days')), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", _hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('60 Days')), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('90 Days')), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", _hoisted_14, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('365 Days')), 1 /* TEXT */)], 32 /* HYDRATE_EVENTS */), _hoisted_15]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('7 Days')), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", _hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('30 Days')), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('60 Days')), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", _hoisted_14, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('90 Days')), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", _hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__('365 Days')), 1 /* TEXT */)], 32 /* HYDRATE_EVENTS */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  if have define getDateRange"), _this.card.getDateRange ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("select", {
+        key: 1,
+        "aria-label": "Select Ranges",
+        "class": "w-full block form-control form-select form-select-bordered",
+        onChange: _cache[1] || (_cache[1] = function ($event) {
+          return $options.startPicker();
+        })
+      }, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_this.card.getDateRange, function (item, index) {
+        return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("option", {
+          value: item
+        }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.__(item + ' Days')), 9 /* TEXT, PROPS */, _hoisted_16);
+      }), 256 /* UNKEYED_FRAGMENT */))], 32 /* HYDRATE_EVENTS */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_17]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
         "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["refreshCharts", {
           rotate: $data.startRotate
         }]),
-        onClick: _cache[1] || (_cache[1] = function ($event) {
+        onClick: _cache[2] || (_cache[2] = function ($event) {
           return $options.startPicker();
         })
-      }, _hoisted_17, 2 /* CLASS */)])])];
+      }, _hoisted_19, 2 /* CLASS */)])])];
     }),
 
     _: 1 /* STABLE */
@@ -237,7 +252,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nh1[data-v-b9bc2c0a]{\n        align-self: center;\n}\n.refreshCharts[data-v-b9bc2c0a]{\n        align-self: center !important;\n        margin-left: 14px;\n        filter: contrast(0.5);\n        opacity: 0.7;\n}\n.refreshCharts[data-v-b9bc2c0a]:hover{\n        cursor: pointer;\n        filter: contrast(1.1);\n        opacity: 1;\n}\n.rotate[data-v-b9bc2c0a]{\n        animation: rotation-b9bc2c0a 1s infinite linear;\n}\n@keyframes rotation-b9bc2c0a {\nfrom {\n            transform: rotate(0deg);\n}\nto {\n            transform: rotate(359deg);\n}\n}\nCard[data-v-b9bc2c0a] {\n        height:55px\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nh1[data-v-b9bc2c0a]{\n        align-self: center;\n}\n.refreshCharts[data-v-b9bc2c0a]{\n        align-self: center !important;\n        margin-left: 14px;\n        filter: contrast(0.5);\n        opacity: 0.7;\n}\n.refreshCharts[data-v-b9bc2c0a]:hover{\n        cursor: pointer;\n        filter: contrast(1.1);\n        opacity: 1;\n}\n.rotate[data-v-b9bc2c0a]{\n        animation: rotation-b9bc2c0a 1s infinite linear;\n}\n@keyframes rotation-b9bc2c0a {\nfrom {\n            transform: rotate(0deg);\n}\nto {\n            transform: rotate(359deg);\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -672,7 +687,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Card_vue_vue_type_template_id_b9bc2c0a_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Card.vue?vue&type=template&id=b9bc2c0a&scoped=true */ "./resources/js/components/Card.vue?vue&type=template&id=b9bc2c0a&scoped=true");
 /* harmony import */ var _Card_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Card.vue?vue&type=script&lang=js */ "./resources/js/components/Card.vue?vue&type=script&lang=js");
 /* harmony import */ var _Card_vue_vue_type_style_index_0_id_b9bc2c0a_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Card.vue?vue&type=style&index=0&id=b9bc2c0a&scoped=true&lang=css */ "./resources/js/components/Card.vue?vue&type=style&index=0&id=b9bc2c0a&scoped=true&lang=css");
-/* harmony import */ var C_MAMP_www_Contrarian_nova_components_DatePicker_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_MAMP_www_packages_DatePicker_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -680,7 +695,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_MAMP_www_Contrarian_nova_components_DatePicker_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_Card_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Card_vue_vue_type_template_id_b9bc2c0a_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-b9bc2c0a"],['__file',"resources/js/components/Card.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_MAMP_www_packages_DatePicker_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_Card_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Card_vue_vue_type_template_id_b9bc2c0a_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-b9bc2c0a"],['__file',"resources/js/components/Card.vue"]])
 /* hot reload */
 if (false) {}
 

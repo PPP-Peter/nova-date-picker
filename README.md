@@ -35,6 +35,7 @@ You can define count days in `config/wame-datepicker.php`
         "365",
     ]
 ```
+If you define config later you must reinstall ! composer require pppcreative/date-picker
 
 ## Translates
 You can edit translates in nova/sk.json
